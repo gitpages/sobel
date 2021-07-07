@@ -1,4 +1,4 @@
-importScripts('/sobel/sobel.js');
+importScripts('/sobel.js');
 
 self.postMessage('Starting worker.');
 
