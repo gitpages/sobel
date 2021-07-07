@@ -51,7 +51,7 @@ function drawImageUsingWorker(event) {
   context.drawImage(image, 0, 0);
   var imageData = context.getImageData(0, 0, width, height);
 
-  var ww = new Worker('/example/scripts/webWorker.js');
+  var ww = new Worker('/sobel/example/scripts/webWorker.js');
 
   ww.onmessage = function(event) {
     console.log(event.data);
